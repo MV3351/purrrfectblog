@@ -12,3 +12,38 @@ Text Domain: purrrfectblog
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+body {
+    background-color: #E5E5E5 !important;
+    padding-top: 70px;
+}
+
+.custom-nav {
+    background-color: #3C4E6A;
+    
+}
+
+.dropdown-menu {
+    font-size: small !important;
+}
+
+.navbar-brand img {
+    width: 290px;
+    height: 290px;
+    padding-top: 20px;
+}
+
+.logo {
+    background-color: orange;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.custom-nav  {
+    width: 100%;
+}
