@@ -44,5 +44,8 @@ body {
   justify-content: space-between;
 }
 
-checking
-mad
+.custom-footer {
+    background-color: #3C4E6A;
+    color: #ECAF8A;
+}
+

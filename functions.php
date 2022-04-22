@@ -12,6 +12,21 @@ add_action ( 'wp_enqueue_scripts', 'theme_files');
 //Tittle Tag Support
 add_theme_support( 'title-tag');
 
+// Widget Area
+function custom_widgets() {
+
+  register_sidebar( array(
+		'name'          => 'Footer Widgets',
+		'id'            => 'footer_widgets',
+		'before_widget' => '<div class="col-lg-3 col-md-3"><div class="footer_widget small">',
+		'after_widget'  => '</div></div>',
+		'before_title'  => '<h4 class="fs-6">',
+		'after_title'   => '</h4>',
+	) );
+
+}
+add_action( 'widgets_init', 'custom_widgets' );
+
 /**
  * Add HTML5 theme support.
  */
