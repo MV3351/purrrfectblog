@@ -24,6 +24,15 @@ function custom_widgets() {
 		'after_title'   => '</h4>',
 	) );
 
+  register_sidebar(array(
+    'name' => 'Default Sidebar',
+    'id' => 'default_sidebar',
+    'before_widget' => '<aside class="card small mb-3 default_sidebar">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="card-header fs-6">',
+    'after_title' => '</h3>',
+  ));
+
 }
 add_action( 'widgets_init', 'custom_widgets' );
 
