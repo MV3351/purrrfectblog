@@ -43,3 +43,8 @@ body {
 .navbar-collapse {
   justify-content: space-between;
 }
+
+.custom-footer {
+    background-color: #3C4E6A;
+    color: #ECAF8A;
+}
