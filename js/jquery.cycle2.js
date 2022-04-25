@@ -666,7 +666,7 @@
         slideActiveClass: 'cycle-slide-active',
         slideClass:       'cycle-slide',
         slideCss:         { position: 'absolute', top: 0, left: 0 },
-        slides:          'figure',
+        slides:          '> img',
         speed:            500,
         startingSlide:    0,
         sync:             true,

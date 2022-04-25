@@ -15,6 +15,33 @@ add_theme_support( 'title-tag');
 // Widget Area
 function custom_widgets() {
 
+  register_sidebar(array(
+    'name' => 'Front Page Banner Text',
+    'id' => 'front_page_banner_text',
+    'before_widget' => '<div class="banner-text">',
+    'after_widget'  => '</div>',
+    'before_title' => '<h1 class="fs-4">',
+    'after_title' => '</h1>',
+  ));
+
+  register_sidebar(array(
+    'name' => 'Front Page Banner Image',
+    'id' => 'front_page_banner_image',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title' => '',
+    'after_title' => '',
+  ));
+
+  register_sidebar(array(
+    'name' => 'Course Cat Text',
+    'id' => 'course_cat_text',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title' => '<h2 class="fs-5 fw-600">',
+    'after_title' => '</h2>',
+  ));
+
   register_sidebar( array(
 		'name'          => 'Footer Widgets',
 		'id'            => 'footer_widgets',
