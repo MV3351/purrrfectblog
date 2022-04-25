@@ -28,23 +28,27 @@ body {
 }
 
 .navbar-brand img {
-    width: 290px;
-    height: 290px;
+    width: 150px;
+    height: 150px;
     padding-top: 20px;
 }
 
-.logo {
-    background-color: orange;
-    border-radius: 50%;
-    position: relative;
-    left: 50%;
+.fw-600 {
+    font-weight: 600;
 }
 
-.navbar-collapse {
-  justify-content: space-between;
+.border-black {
+    border-top: 1px solid #3e3e3e;
+}
+
+
+.feature_holder img {
+    width: 55px;
+    height: auto;
 }
 
 .custom-footer {
     background-color: #3C4E6A;
     color: #ECAF8A;
 }
+
