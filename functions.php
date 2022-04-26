@@ -21,6 +21,23 @@ function wpdocs_after_setup_theme() {
 }
 add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
 
+// Excerpt Length
+
+function mytheme_custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
+
+
+//Excerpt Readmore
+
+function new_excerpt_more($more) {
+  global $post;
+return '..' . 'Read More &raquo;';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+
 // Widget Area
 function custom_widgets() {
 
@@ -162,4 +179,3 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 }
 // register a new menu
 register_nav_menu('main-menu', 'Main menu');
-?>
