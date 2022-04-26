@@ -21,22 +21,11 @@ function wpdocs_after_setup_theme() {
 }
 add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
 
-// Excerpt Length
+//Page Excerpt Support
+add_post_type_support('page', 'excerpt');
 
-function mytheme_custom_excerpt_length( $length ) {
-  return 20;
-}
-add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
-
-
-//Excerpt Readmore
-
-function new_excerpt_more($more) {
-  global $post;
-return '..' . 'Read More &raquo;';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
-
+//Post Thumbnails
+add_theme_support('post-thumbnails');
 
 // Widget Area
 function custom_widgets() {
