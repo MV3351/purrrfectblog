@@ -1,7 +1,6 @@
 <?php
 
 /**
- * FP
  * Template Name: Front Page
  */
 
