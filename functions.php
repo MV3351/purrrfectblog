@@ -57,6 +57,14 @@ function custom_widgets() {
     'after_title' => '</h2>',
   ));
 
+  register_sidebar(array(
+    'name' => 'Services Text',
+    'id' => 'services_text',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title' => '<h2 class="fs-5 fw-600">',
+    'after_title' => '</h2>',
+  ));
 
   register_sidebar( array(
     'name' => 'Default Sidebar',
