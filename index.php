@@ -5,15 +5,15 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-9 col-md-9">
-        <div class="list-group">
+        <div class="list-group mb-3">
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <a href="<?php the_permalink(); ?>" class="list-group-item list-group-item-action small">
                 <div class="row align-items-center">
                   <div class="col-lg-4 col-md-4">
                     <?php
                     if (has_post_thumbnail()) { ?>
-                      <img class="img-fluid rounded" src= "<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_title(); ?>">
-                     <?php }else{?>
+                      <img class="img-fluid rounded" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_title(); ?>">
+                    <?php } else { ?>
                       <img class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php echo get_the_title(); ?>">
                     <?php }
                     ?>
@@ -31,7 +31,16 @@
           <?php endif; ?>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3"></div>
+      <div class="col-lg-3 col-md-3 default_sidebar">
+
+
+        <?php if ( is_active_sidebar ( 'default_sidebar' ) ) : ?>
+          <?php dynamic_sidebar ( 'default_sidebar' ); ?>
+        <?php endif; ?>
+
+
+        
+      </div>
     </div>
   </div>
 </section>
@@ -43,23 +52,6 @@
   <?php if (is_active_sidebar('home_sidebar')); ?>
   <?php dynamic_sidebar('home_sidebar'); ?>
 </aside>
-
-
-
-<div class="col-lg-3 col-md-3">
-
-
-  <?php if (is_active_sidebar('default_sidebar')) : ?>
-    <?php dynamic_sidebar('default_sidebar'); ?>
-  <?php endif; ?>
-
-</div>
-
-<section class="banner cycle-slideshow">
-  <?php if (is_active_sidebar('home_banner_slider')) : ?>
-    <?php dynamic_sidebar('home_banner_slider'); ?>
-  <?php endif; ?>
-</section>
 
 
 
