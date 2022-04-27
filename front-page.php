@@ -1,6 +1,7 @@
 <?php
 
 /**
+ * is this going to work
  * 
  * Template Name: Front Page
  */
@@ -8,7 +9,7 @@
 get_header(); ?>
 
 <header class="main-header pt-5 pb-5 border-bottom">
-  <div class="container">
+  <div class="container"> 
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-6">
         <?php if (is_active_sidebar('front_page_banner_text')) : ?>
