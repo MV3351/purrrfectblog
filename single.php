@@ -9,6 +9,9 @@
                 <div class="page-title-heading small">
                     <h1 class="fs-4 fw-600"><?php echo get_the_title(); ?></h1>
                     <p><?php echo get_the_excerpt(); ?></p>
+                    <p>
+                        <span class="badge bg-primary"><?php the_time('F jS, Y'); ?></span> by <?php the_author_posts_link(); ?>
+                    </p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -31,6 +34,12 @@
             <div class="col-lg-9 col-md-9">
                 <article class="main-content small ">
                     <?php the_content(); ?>
+                        <div class="alert alert-secondary" role="alert">
+                            <p class="postmetadata m-0"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
+                        </div>
+
+                        <?php comments_template(); ?>
+
                 </article>
             </div>
             <div class="col-lg-3 col-md-3 default_sidebar">

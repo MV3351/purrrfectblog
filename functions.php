@@ -66,6 +66,15 @@ function custom_widgets() {
     'after_title' => '</h2>',
   ));
 
+  register_sidebar(array(
+    'name' => 'Sign-up Form',
+    'id' => 'sign_up_form',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title' => '',
+    'after_title' => '',
+  ));
+
   register_sidebar( array(
     'name' => 'Default Sidebar',
     'id' => 'default_sidebar',

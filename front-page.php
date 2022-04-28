@@ -132,18 +132,27 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="main-content">
+<section class="main-content border-top pb-4 pt-4">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
                 <div class="content-area">
                     <?php the_content(); ?>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
-                
+            <?php
+
+            if (has_post_thumbnail()) { ?>
+                <img class="img-fluid rounded" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_title(); ?>">
+            <?php } else { ?>
+                <img class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php echo get_the_title(); ?>">
+            <?php }
+
+            ?>
             </div>
         </div>
-    </div>                                 
+    </div>    
+</section>                             
 
 <?php get_footer(); ?>
