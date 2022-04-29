@@ -2,16 +2,17 @@
 
 <header class="cat-header pt-3 pb-3">
   <div class="container">
-    <div class="row d-flex justify-content-center">
+    <div class="row">
       <div class="col-lg-6 col-md-6">
-        <div class="cat-header-text small text-center">
-          <h1 class="fs-4 fw-600 text-center"><?php echo the_archive_title(); ?></h1>
-          <?php echo category_description(); ?>
+        <div class="cat-header-text small">
+          <h1 class="fs-4 fw-600">Tags: <q><?php echo single_tag_title(); ?></q></h1>
+          <?php echo tag_description(); ?>
         </div>
       </div>
     </div>
   </div>
 </header>
+
 
 <section class="default-holder mt-3">
   <div class="container">

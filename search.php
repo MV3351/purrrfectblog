@@ -5,7 +5,7 @@
     <div class="row d-flex justify-content-center">
       <div class="col-lg-6 col-md-6">
         <div class="cat-header-text small text-center">
-          <h1 class="fs-4 fw-600 text-center"><?php echo the_archive_title(); ?></h1>
+          <h1 class="fs-4 fw-600 text-center">Search Results for <q><?php echo get_search_query(); ?></q></h1>
           <?php echo category_description(); ?>
         </div>
       </div>
