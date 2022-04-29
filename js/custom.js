@@ -19,6 +19,8 @@
     $('#comment-form-cookies-consent').addClass('mb-2');
 
     $('.section-three h2').addClass('fs-4 fw-600');
+
+    $('.features h2').addClass('fs-6 fw-600 mt-3');
   });
 
 })(jQuery);

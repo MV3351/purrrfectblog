@@ -29,33 +29,30 @@ get_header(); ?>
       <div class="col-lg-4 col-md-4">
         <div class="d-flex align-items-center feature_holder small border rounded mb-3">
           <div class="flex-shrink-0">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/cat.png" alt="Featured Text">
+            <img class="img-fluid" src="<?php echo the_field('feature_one_image'); ?>" alt="Featured Text">
           </div>
           <div class="flex-grow-1 ms-3">
-            <h3 class="fs-6 fw-600 mt-3">Featured Heading</h3>
-            <p>This is some content from a media component. You can replace any content and adjust it.</p>
+            <?php echo the_field('feature_one_text'); ?>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-4">
         <div class="d-flex align-items-center feature_holder small border rounded mb-3">
           <div class="flex-shrink-0">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/cat-footprint.png" alt="Featured Text">
+            <img class="img-fluid" src="<?php echo the_field('feature_two_image'); ?>" alt="Featured Text">
           </div>
           <div class="flex-grow-1 ms-3">
-            <h3 class="fs-6 fw-600 mt-3">Featured Heading</h3>
-            <p>This is some content from a media component. You can replace any content and adjust it.</p>
+          <?php echo the_field('feature_two_text'); ?>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-4">
         <div class="d-flex align-items-center feature_holder small border rounded mb-3">
           <div class="flex-shrink-0">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/black-cat.png" alt="Featured Text">
+            <img class="img-fluid" src="<?php echo the_field('feature_three_image'); ?>" alt="Featured Text">
           </div>
           <div class="flex-grow-1 ms-3">
-            <h3 class="fs-6 fw-600 mt-3">Featured Heading</h3>
-            <p>This is some content from a media component. You can replace any content and adjust it.</p>
+          <?php echo the_field('feature_three_text'); ?>
           </div>
         </div>
       </div>
