@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+
+/**
+ * Template Name: About Page 
+ */
+
+
+get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -8,10 +15,7 @@
             <div class="col-lg-6 col-md-6">
                 <div class="page-title-heading small">
                     <h1 class="fs-4 fw-600"><?php echo get_the_title(); ?></h1>
-                    <p><?php echo get_the_excerpt(); ?></p>
-                    <p>
-                        <span class="badge bg-primary"><?php the_time('F jS, Y'); ?></span> by <?php the_author_posts_link(); ?>
-                    </p>
+                    <p><?php the_content(); ?></p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -28,29 +32,39 @@
         </div>
     </div>
 </header>
-<section class="page contents border-top pt-3 pb-3">
+
+<section class="section-three pt-4 pb-4 border-top">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-md-9">
-                <article class="main-content small ">
-                    <?php the_content(); ?>
-                        <div class="alert alert-secondary" role="alert">
-                            <p class="postmetadata m-0"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
-
-                            <?php the_tags( 'Social tagging: ',', ' ); ?>
-
-                        </div>
-
-                        <?php comments_template(); ?>
-
-                </article>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="who-we-are-image">
+                    <img class="img-fluid rounded" src="<?php echo the_field('who_we_are_image'); ?>" alt="Who we are">
+                </div>
             </div>
-            <div class="col-lg-3 col-md-3 default_sidebar">
-                <?php get_sidebar(); ?>
+            <div class="col-lg-6 col-md-6">
+                <div class="who-we-are-text small">
+                   <?php echo the_field('who_we_are'); ?>
+                </div>
             </div>
         </div>
     </div>
+</section>
 
+<section class="section-three pt-4 pb-4 border-top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="what-we-do-text small">
+                   <?php echo the_field('what_we_do'); ?>
+                </div>
+            </div>
+             <div class="col-lg-6 col-md-6">
+                <div class="what-we-do-image">
+                    <img class="img-fluid rounded" src="<?php echo the_field('what_we_do_image'); ?>" alt="Who we are">
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="services border-top pt-4 pb-4">
