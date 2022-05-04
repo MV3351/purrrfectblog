@@ -76,7 +76,7 @@ get_header(); ?>
     <div class="row mt-4">
         <div class="col-lg-3 col-md-3">
             <a href="#" class="card text-decoration-none text-center mb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-one.jpg" alt="Job Oriented Courses">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-one.jpg" alt="image of cat" >
                 <div class="card-body">
                     <h3 class="m-0 fs-6 fw-600">Clawful Food</h3>
                 </div>
@@ -84,7 +84,7 @@ get_header(); ?>
         </div>
         <div class="col-lg-3 col-md-3">
             <a href="#" class="card text-decoration-none text-center mb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-two.jpg" alt="Job Oriented Courses">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-two.jpg"  alt="image of cat" width="304" height="455.77">
                 <div class="card-body">
                     <h3 class="m-0 fs-6 fw-600">Best Cat Perch</h3>
                 </div>
@@ -92,7 +92,7 @@ get_header(); ?>
         </div>
         <div class="col-lg-3 col-md-3">
             <a href="#" class="card text-decoration-none text-center mb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-three.jpg" alt="Job Oriented Courses">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-three.jpg" alt="image of cat" width="304" height="455.77">
                 <div class="card-body">
                     <h3 class="m-0 fs-6 fw-600">How to Own your Human</h3>
                 </div>
@@ -100,7 +100,7 @@ get_header(); ?>
         </div>
         <div class="col-lg-3 col-md-3">
             <a href="#" class="card text-decoration-none text-center mb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-four.jpg" alt="Job Oriented Courses">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-four.jpg" alt="image of cat" width="304" height="455.77">
                 <div class="card-body">
                     <h3 class="m-0 fs-6 fw-600">Cat-tastrophes</h3>
                 </div>
