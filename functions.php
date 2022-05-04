@@ -35,8 +35,8 @@ function custom_widgets() {
     'id' => 'front_page_banner_text',
     'before_widget' => '<div class="banner-text">',
     'after_widget'  => '</div>',
-    'before_title' => '<h1 class="fs-4">',
-    'after_title' => '</h1>',
+    'before_title' => '<h3 class="fs-4 fw-600">',
+    'after_title' => '</h3>',
   ));
 
   register_sidebar(array(
