@@ -78,7 +78,7 @@ get_header(); ?>
             <a href="#" class="card text-decoration-none text-center mb-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-one.jpg" alt="Job Oriented Courses">
                 <div class="card-body">
-                    <h3 class="m-0 fs-6 fw-600">Job Oriented Courses</h3>
+                    <h3 class="m-0 fs-6 fw-600">Clawful Food</h3>
                 </div>
           </a>
         </div>
@@ -86,7 +86,7 @@ get_header(); ?>
             <a href="#" class="card text-decoration-none text-center mb-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-two.jpg" alt="Job Oriented Courses">
                 <div class="card-body">
-                    <h3 class="m-0 fs-6 fw-600">Job Oriented Courses</h3>
+                    <h3 class="m-0 fs-6 fw-600">Best Cat Perch</h3>
                 </div>
           </a>
         </div>
@@ -94,7 +94,7 @@ get_header(); ?>
             <a href="#" class="card text-decoration-none text-center mb-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-three.jpg" alt="Job Oriented Courses">
                 <div class="card-body">
-                    <h3 class="m-0 fs-6 fw-600">Job Oriented Courses</h3>
+                    <h3 class="m-0 fs-6 fw-600">How to Own your Human</h3>
                 </div>
           </a>
         </div>
@@ -102,7 +102,7 @@ get_header(); ?>
             <a href="#" class="card text-decoration-none text-center mb-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/card-image-four.jpg" alt="Job Oriented Courses">
                 <div class="card-body">
-                    <h3 class="m-0 fs-6 fw-600">Job Oriented Courses</h3>
+                    <h3 class="m-0 fs-6 fw-600">Cat-tastrophes</h3>
                 </div>
           </a>
         </div>
